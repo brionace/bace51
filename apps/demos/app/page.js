@@ -7,7 +7,7 @@ export default function Home() {
   // write a fetch request post data to a api route
   // wrap in async function
   async function postData(
-    url = "http://localhost:3000/demos",
+    url = "https://bace51-demos.vercel.app/demos",
     data = { name: "Anna Paton" }
   ) {
     // Default options are marked with *
