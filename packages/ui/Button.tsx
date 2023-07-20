@@ -1,7 +1,18 @@
 "use client";
 
-import * as React from "react";
+import React, { StyleHTMLAttributes } from "react";
 
-export const Button = () => {
-  return <button onClick={() => alert("boop")}>Boop</button>;
+interface Button {
+  children: React.ReactNode;
+  style?: React.CSSProperties;
+  className?: string;
+  onClick?: (value: any) => void;
+}
+
+export const Button = ({ children, style, className, onClick }: Button) => {
+  return (
+    <button className={className} style={style} onClick={onClick}>
+      {children}
+    </button>
+  );
 };
