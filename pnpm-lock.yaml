@@ -141,7 +141,10 @@ importers:
       eslint-plugin-react: 7.28.0_eslint@7.32.0
 
   packages/tailwind-config:
-    specifiers: {}
+    specifiers:
+      tailwindcss: ^3.3.3
+    devDependencies:
+      tailwindcss: 3.3.3
 
   packages/tsconfig:
     specifiers: {}
